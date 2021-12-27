@@ -1,0 +1,15 @@
+Source: kaisen-winkey-recovery
+Priority: optional
+Section: utils
+Standards-Version: 4.6.0
+Build-Depends: debhelper
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
+Homepage: https://kaisenlinux.org
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/kaisen-winkey-recovery.git
+Vcs-Browser: https://gitlab.com/kaisenlinux/packages/kaisen-winkey-recovery
+
+Package: kaisen-winkey-recovery
+Architecture: any
+Priority: optional
+Depends: binutils
+Description: Recover OEM Windows Key
