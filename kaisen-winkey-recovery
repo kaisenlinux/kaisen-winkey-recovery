@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -e
 
@@ -6,14 +6,14 @@ GREEN='\e[1;32m'
 RED='\e[1;31m'
 
 if [[ "$EUID" -ne "0" ]]; then
-	echo -e $RED "Run this script with root user or with sudo command."
+	echo -e "$RED" "Run this script with root user or with sudo command."
 	exit 1
 fi
 
 if [ ! -e /sys/firmware/acpi/tables/MSDM ]; then
-	echo -e $RED "No Windows key was found."
+	echo -e "$RED" "No Windows key was found."
 	exit 0
 else
 	KEY=$(strings /sys/firmware/acpi/tables/MSDM | tail -1)
-	echo -e $GREEN $KEY
+	echo -e "$GREEN" "$KEY"
 fi
