@@ -1,3 +1,9 @@
+kaisen-winkey-recovery (1.1) kaisen-packages; urgency=medium
+
+  * Update shebang (thanks to julienbriault)
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 30 Dec 2021 21:13:44 +0100
+
 kaisen-winkey-recovery (1.0) kaisen-packages; urgency=medium
 
   * Software to recover OEM Windows key
