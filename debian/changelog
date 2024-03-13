@@ -1,3 +1,9 @@
+kaisen-winkey-recovery (1.2) kaisen-packages; urgency=medium
+
+  * Add tput sgr0 after echo
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 13 Mar 2024 01:12:45 +0100
+
 kaisen-winkey-recovery (1.1) kaisen-packages; urgency=medium
 
   * Update shebang (thanks to julienbriault)

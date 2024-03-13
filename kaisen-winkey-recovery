@@ -11,9 +11,9 @@ if [[ "$EUID" -ne "0" ]]; then
 fi
 
 if [ ! -e /sys/firmware/acpi/tables/MSDM ]; then
-	echo -e $RED "No Windows key was found."
+	echo -e $RED "No Windows key was found.";tput sgr0
 	exit 0
 else
 	KEY=$(strings /sys/firmware/acpi/tables/MSDM | tail -1)
-	echo -e $GREEN $KEY
+	echo -e $GREEN $KEY;tput sgr0
 fi
