@@ -1,3 +1,10 @@
+kaisen-winkey-recovery (1.3) kaisen-packages; urgency=medium
+
+  * Replace the tput sgr0 command by a BASH escape sequence to reset the color
+  * Remove the debian/compat file
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 25 Apr 2024 07:49:52 +0200
+
 kaisen-winkey-recovery (1.2) kaisen-packages; urgency=medium
 
   * Add tput sgr0 after echo

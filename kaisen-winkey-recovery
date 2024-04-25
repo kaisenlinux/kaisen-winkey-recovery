@@ -4,16 +4,17 @@ set -e
 
 GREEN='\e[1;32m'
 RED='\e[1;31m'
+RESET_COLOR='\033[0m'
 
 if [[ "$EUID" -ne "0" ]]; then
-	echo -e $RED "Run this script with root user or with sudo command."
+	echo -e $RED "Run this script with root user or with sudo command."$RESET_COLOR
 	exit 1
 fi
 
 if [ ! -e /sys/firmware/acpi/tables/MSDM ]; then
-	echo -e $RED "No Windows key was found.";tput sgr0
+	echo -e $RED "No Windows key was found."$RESET_COLOR
 	exit 0
 else
 	KEY=$(strings /sys/firmware/acpi/tables/MSDM | tail -1)
-	echo -e $GREEN $KEY;tput sgr0
+	echo -e $GREEN $KEY $RESET_COLOR
 fi

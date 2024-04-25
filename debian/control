@@ -1,8 +1,8 @@
 Source: kaisen-winkey-recovery
 Priority: optional
 Section: utils
-Standards-Version: 4.6.0
-Build-Depends: debhelper
+Standards-Version: 4.6.2
+Build-Depends: debhelper-compat (=13)
 Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 Homepage: https://kaisenlinux.org
 Vcs-Git: https://gitlab.com/kaisenlinux/packages/kaisen-winkey-recovery.git
